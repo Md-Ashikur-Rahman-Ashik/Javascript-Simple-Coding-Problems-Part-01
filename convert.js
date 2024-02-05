@@ -51,17 +51,22 @@ const leapYear = isLeapYear(2100);
 function oddAverage(numbers){
     // console.log(numbers);
     let sum = 0;
+    let odd = [];
     for(const number of numbers){
         // console.log(number);
         if(number % 2 === 1){
             console.log(number);
+            odd.push(number);
             sum = sum + number;
         }
     }
+    console.log(odd);
     console.log("The sum of numbers is:", sum);
+    let average = sum / odd.length;
+    return average;
 }
 
-const numbers = [42, 13, 58, 65, 81];
+const numbers = [42, 13, 58, 65, 81, 5, 105];
 // console.log("The sum of numbers is:", sum);
 const avg = oddAverage(numbers);
 console.log("Average of the odd numbers:", avg);
