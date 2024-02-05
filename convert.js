@@ -34,7 +34,10 @@ const result = kmToMile(5);
 // console.log(result);
 
 function isLeapYear(year){
-    if(year % 4 === 0 && year != 0){
+    if(year % 4 === 0 && year % 100 !== 0){
+        return true;
+    }
+    else if(year % 100 === 0 && year % 400 === 0){
         return true;
     }
     else{
@@ -42,5 +45,23 @@ function isLeapYear(year){
     }
 }
 
-const leapYear = isLeapYear(2024);
-console.log(leapYear);
+const leapYear = isLeapYear(2100);
+// console.log(leapYear);
+
+function oddAverage(numbers){
+    // console.log(numbers);
+    let sum = 0;
+    for(const number of numbers){
+        // console.log(number);
+        if(number % 2 === 1){
+            console.log(number);
+            sum = sum + number;
+        }
+    }
+    console.log("The sum of numbers is:", sum);
+}
+
+const numbers = [42, 13, 58, 65, 81];
+// console.log("The sum of numbers is:", sum);
+const avg = oddAverage(numbers);
+console.log("Average of the odd numbers:", avg);
