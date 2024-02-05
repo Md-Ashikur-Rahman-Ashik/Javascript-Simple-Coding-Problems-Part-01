@@ -35,4 +35,21 @@ const max = Math.max(45, 1, 65, 99, 126, 21, 5, -99, 987);
 
 // console.log(Math.PI);
 // console.log(Math.abs(5 - 20));
-console.log(Math.round());
+// console.log(Math.round(2.25));
+// console.log(Math.floor(2.95));
+// console.log(Math.ceil(2.00001));
+
+// console.log(Math.random());
+// console.log(Math.random()*10);
+// console.log(Math.round(Math.random()*10));
+
+const today = new Date();
+const date = new Date("2024-12-25");
+// console.log(date);
+// console.log(date.getMonth());
+// console.log(date.getDay());
+const specificDate = new Date(2091, 0, 26);
+console.log(specificDate);
+specificDate.setMonth(10);
+// console.log(specificDate);
+console.log(specificDate.toLocaleString());
