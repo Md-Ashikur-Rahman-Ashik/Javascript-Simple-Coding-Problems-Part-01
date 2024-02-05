@@ -15,4 +15,32 @@ function secondInchToFeet(inch){
 }
 
 const height = secondInchToFeet(75);
-console.log(height);
+// console.log(height);
+
+function mileToKm(mile){
+    const kilo = mile * 1.609344;
+    return kilo;
+}
+
+// const result = mileToKm(5);
+// console.log(result);
+
+function kmToMile(km){
+    const mile = km * 0.6213712;
+    return mile;
+}
+
+const result = kmToMile(5);
+// console.log(result);
+
+function isLeapYear(year){
+    if(year % 4 === 0 && year != 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+const leapYear = isLeapYear(2024);
+console.log(leapYear);
